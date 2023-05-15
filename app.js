@@ -9,16 +9,19 @@ const errorMiddleware = require("./middleware/error");
 
 const cors = require('cors');
 
-// Set up an array of allowed origins
-const allowedOrigins = ['https://a6dubey-ecomm.netlify.app/', 'http://localhost:3000'];
+// // Set up an array of allowed origins
+// const allowedOrigins = ['https://a6dubey-ecomm.netlify.app/', 'http://localhost:3000'];
 
-// Set up CORS options
-const corsOptions = {
-  origin: allowedOrigins
-};
+// // Set up CORS options
+// const corsOptions = {
+//   origin: allowedOrigins
+// };
 
-// Enable CORS for all routes
-app.use(cors(corsOptions));
+// // Enable CORS for all routes
+// app.use(cors(corsOptions));
+
+
+app.use(cors());
 
 
 
