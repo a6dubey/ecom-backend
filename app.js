@@ -7,6 +7,13 @@ const path = require("path");
 
 const errorMiddleware = require("./middleware/error");
 
+const cors = require('cors');
+
+app.use(cors({
+  origin: 'http://localhost:3000'
+}));
+
+
 // Config
 if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({ path: "backend/config/config.env" });
