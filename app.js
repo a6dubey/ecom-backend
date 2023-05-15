@@ -10,7 +10,7 @@ const errorMiddleware = require("./middleware/error");
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: 'https://a6dubey-ecomm.netlify.app/'
 }));
 
 
